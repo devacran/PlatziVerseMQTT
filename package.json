@@ -1,0 +1,23 @@
+{
+  "name": "PlatziVerseMQTT",
+  "version": "1.0.0",
+  "private": true,
+  "description": "## `agent/connected`",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "start:dev": "DEBUG=platziverse:* nodemon server.js",
+    "lint": "standard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.42.5",
+    "aedes-persistence-redis": "^7.0.0",
+    "platziversedb": "../PlatziVerseDB"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
